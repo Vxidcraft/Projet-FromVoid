@@ -1,0 +1,195 @@
+:root {
+    --colorhorde: red;
+    --coloralliance: blue;
+    --color3: cyan;
+    --color4: brown; 
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    list-style-type: none;
+    
+}
+
+
+nav {
+    position: relative;
+    max-width: 50%;
+    max-height: 70px;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: 3px 1px 20px 10px var(--color4);
+    border-radius: 30px ;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.sous-1 {
+    position: absolute;
+    display: block;
+    transform: translateY(700px);
+    transform: translateX(-450px);
+    z-index: -1;
+    color: transparent;
+    transition: 0.5s ease;
+}
+
+.sous-1:hover {
+    z-index: 2;
+    color: black;
+}
+
+ul li {
+    margin: 15px 0 15px 0;
+    transition: 0.5s ease;
+}
+
+.deroulant:hover{
+    letter-spacing: 2px;
+    text-decoration: underline;
+    cursor: pointer;    
+}
+
+
+/* ------------------------Menu déroulant -----------------------------*/
+
+
+
+
+/* ------------------------------------------------------------------- */
+
+h1 {
+    margin: 50px;
+    font-size: 300%;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 4px;
+        
+   
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 80%;
+    max-height: 300px;
+    border: 3px solid;
+    background: transparent;
+    box-shadow: 9px 10px 20px 10px black;
+    backdrop-filter: blur(4px);
+    }
+
+
+body {
+    cursor: url(./Asset/Img/cursor.cur) auto;
+    background: url(./Asset/Img/BackgroundWoW1.jpg) fixed center/cover;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.logoally, .logohorde {
+    width: 30%;
+    background: transparent;
+    
+
+}
+
+p {
+    color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+
+
+img {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    width: 40%;
+    height: 50%;
+    
+    
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captionally {
+    font-size: large;
+    color: var(--coloralliance);
+    background: black;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+}
+
+.allytable {
+    
+    margin: 40px;
+    table-layout: fixed;
+    text-align: center;
+    border: 3px solid var(--coloralliance);
+    border-color: black;
+    padding: 2px;
+    color: black;
+    letter-spacing: 1px;
+    backdrop-filter: blur(4px);
+    
+   
+}
+
+tr{
+    border: 2px solid;
+}
+
+td {
+    border: 1px solid;
+    font-size: 30px;
+
+}
+
+.captionhorde {
+    font-size: large;
+    color: var(--colorhorde);
+    background: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hordetable {
+    margin: 40px;
+    table-layout: fixed;
+    text-align: center;
+    border: 3px solid var(--coloralliance);
+    border-color: black;
+    padding: 2px;
+    color: black;
+    letter-spacing: 1px;
+    backdrop-filter: blur(4px);
+
+  
+}
