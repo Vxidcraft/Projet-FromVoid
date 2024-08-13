@@ -19,22 +19,29 @@
     
 }
 
-
+/* ------------------------Menu déroulant -----------------------------*/
 nav {
+
+   position: fixed;
+   flex-direction: column;
     max-width: 50%;
     max-height: 70px;
     margin: 0 auto;
-    background: transparent;
-    box-shadow: 3px 1px 20px 10px var(--color4);
-    border-radius: 10px ;
+    
+    
+ 
 }
 
 .menu > ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     font-weight: 300;
     font-size: 30px;
     transition: 0.5s;
+    background: linear-gradient(13deg, rgba(34, 39, 195, 0.445) 0%, rgba(253, 52, 45, 0.438) 87%);
+    border-radius: 0 20% 20% 0%;
+
 }
 
 .menu > a {
@@ -42,12 +49,27 @@ nav {
 }
 
 a:hover {
-    letter-spacing: 2px;
+    text-decoration: line-through black 1px
+    ;
 }
 
 a:visited {
     color: black;
 }
+
+
+
+.menu-class, .menu-maps {
+    
+    padding: 20px;
+    
+    
+}
+
+
+
+
+
 
 .sub-class {
     position: absolute;
@@ -57,56 +79,32 @@ a:visited {
     transition: 0.5s ease;
 }
 
-
 .menu-class:hover .sub-class {
-    display: block;
+    display: inline;
     
 }
 
+
+
 .sub-maps {
+    position: absolute;
     display: none;
+    margin: 0 auto;
 }
 
 .menu-maps:hover .sub-maps {
-    display: flex;
-    flex-direction: column;
+    display: inline;
+    z-index: 2;
     border: 1px black solid;
-    text-align: center;
 }
 
 
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------Menu déroulant -----------------------------*/
-
-
-
-
 /* ------------------------------------------------------------------- */
+
+
+
+
+
 
 h1 {
     margin: 50px;
@@ -125,7 +123,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 40px auto;
-    max-width: 80%;
+    max-width: 70%;
     max-height: 300px;
     border: 3px solid;
     background: transparent;
@@ -142,6 +140,15 @@ body {
     align-items: center;
 }
 
+.table-container {
+    background: rgba(255, 255, 255, 0.466);
+    width: 70%;
+    margin: 0 auto;
+    border: 10px black solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 13px;
+}
+
 .logoally, .logohorde {
     width: 30%;
     background: transparent;
@@ -155,7 +162,10 @@ p {
     margin: 5px;
 }
 
-
+h2{
+    margin-top: 69px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -201,6 +211,11 @@ table {
    
 }
 
+main > p {
+    width: 70%;
+    margin: 0 auto;
+}
+
 tr{
     border: 2px solid;
 }
@@ -216,7 +231,7 @@ td {
     color: var(--colorhorde);
     background: black;
     text-align: center;
-    margin-top: 20px;
+
 }
 
 .hordetable {
@@ -235,51 +250,84 @@ td {
 
 
 section {
-    border: 1px solid black;
-    width: 80%;
+    background:rgba(255, 255, 255, 0.397);
+    border: 10px solid black;
+    width: 70%;
     margin: 0 Auto;
     height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 13px;
 }
 
 .btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .btn-ally {
-    width: 100px;
-    height: 100px;
+
+    margin: 40px;
+    width: 120px;
+    height: 50px;
     border-radius: 40px;
-    background: var(--coloralliance);
+    background: linear-gradient(0deg, rgba(171, 195, 34, 0.301) 8%, rgba(45, 52, 253, 0.432) 100%);
     backdrop-filter: blur(4px);
     cursor: pointer;
     transition: 0.5s ease;
+    
+}
+
+.btn-ally img {
+    display: none;
+}
+
+.btn-ally:hover img {
+    display: block;
+    
 }
 
 .btn-ally:hover {
     letter-spacing: 1px;
-    background: rgba(0, 0, 255, 0.30);
+    background: linear-gradient(0deg, rgba(171, 195, 34, 0.301) 8%, rgba(45, 52, 253, 0.432) 100%);
     font-size: 20px;
+    height: 120px;
+    
 }
 
 .btn-horde {
-    width: 100px;
-    height: 100px;
+    margin: 40px;
+    width: 120px;
+    height: 50px;
     border-radius: 40px;
-    background: var(--colorhorde);
+    background: linear-gradient(0deg, rgba(195, 184, 34, 0.411) 0%, rgba(253, 45, 118, 0.514) 96%);
+    /* background-image: url(./Asset/Img/logo-horde.png); */
     backdrop-filter: blur(4px);
     cursor: pointer;
     transition: 0.5s ease;
+}
 
+.btn-horde img {
+    display: none;
+   
+}
+
+.btn-horde:hover img {
+    display: block;
+    height: 120px;
+    
 }
 
 .btn-horde:hover {
+    
     letter-spacing: 1px;
-    background: rgba(255, 0, 0, 0.30);
+    background: linear-gradient(0deg, rgba(195, 184, 34, 0.411) 0%, rgba(253, 45, 118, 0.514) 96%);
     font-size: 20px;
+    height: 120px;
+    
 }
+
+
 
 #generate {
 
