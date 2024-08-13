@@ -2,7 +2,7 @@
     --colorhorde: red;
     --coloralliance: blue;
     --color3: cyan;
-    --color4: brown; 
+    --color4: rgba(109, 65, 15, 0.397); 
 }
 
 
@@ -15,51 +15,90 @@
     box-sizing: border-box;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     list-style-type: none;
+    text-decoration: none;
     
 }
 
 
 nav {
-    position: relative;
     max-width: 50%;
     max-height: 70px;
     margin: 0 auto;
     background: transparent;
     box-shadow: 3px 1px 20px 10px var(--color4);
-    border-radius: 30px ;
+    border-radius: 10px ;
 }
 
-nav ul {
-    position: relative;
+.menu > ul {
     display: flex;
     justify-content: space-around;
-    text-align: center;
-}
-.sous-1 {
-    position: absolute;
-    display: block;
-    transform: translateY(700px);
-    transform: translateX(-450px);
-    z-index: -1;
-    color: transparent;
-    transition: 0.5s ease;
+    font-weight: 300;
+    font-size: 30px;
+    transition: 0.5s;
 }
 
-.sous-1:hover {
-    z-index: 2;
+.menu > a {
+    transition: 0,5s ease;
+}
+
+a:hover {
+    letter-spacing: 2px;
+}
+
+a:visited {
     color: black;
 }
 
-ul li {
-    margin: 15px 0 15px 0;
+.sub-class {
+    position: absolute;
+    display: none;
+    backdrop-filter: blur(4px);
+    border: 1px solid black;
     transition: 0.5s ease;
 }
 
-.deroulant:hover{
-    letter-spacing: 2px;
-    text-decoration: underline;
-    cursor: pointer;    
+
+.menu-class:hover .sub-class {
+    display: block;
+    
 }
+
+.sub-maps {
+    display: none;
+}
+
+.menu-maps:hover .sub-maps {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------------------Menu déroulant -----------------------------*/
@@ -192,4 +231,56 @@ td {
     backdrop-filter: blur(4px);
 
   
+}
+
+
+section {
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 Auto;
+    height: 50vh;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25%;
+}
+
+.btn-ally {
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    background: var(--coloralliance);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn-ally:hover {
+    letter-spacing: 1px;
+    background: rgba(0, 0, 255, 0.30);
+    font-size: 20px;
+}
+
+.btn-horde {
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    background: var(--colorhorde);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.btn-horde:hover {
+    letter-spacing: 1px;
+    background: rgba(255, 0, 0, 0.30);
+    font-size: 20px;
+}
+
+#generate {
+
 }

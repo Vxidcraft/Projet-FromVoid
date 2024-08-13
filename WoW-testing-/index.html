@@ -14,29 +14,24 @@
         }
     </style>
 
-    <nav>
-        <ul>
-            <li class="deroulant">Classes </li>
-                <ul class="sous-1">
-                    <li><a href="#"></a>Guerrier</li>
-                    <li><a href="#"></a>Mage </li>
-                    <li><a href="#"></a>Voleur</li>
-                    
-                </ul>
-            <li class="deroulant">Roles</li>
-                <ul class="sous-2">
-                    <li><a href="#"></a>Rodeur</li>
-                    <li><a href="#"></a>AOE</li>
-                    <li><a href="#"></a>Heal</li>
-                    <li><a href="#"></a>Soutien</li>
-                </ul>
-            <li class="deroulant">Maps & Tips</li>
-                <ul class="sous-3">
-                    <li><a href="#"></a>Bassin D'Arathi</li>
-                    <li><a href="#"></a>Oeil du Cyclone</li>
-                    <li><a href="#"></a>Goulet des chanteguerres</li>
-                </ul>
-        </ul>
+    <nav class="menu">
+      <ul>
+        <li class="menu-class"><a href="">Classes</a>
+            <ul class="sub-class">
+            <li><a href="" style="color: rgb(110, 86, 18);">Guerrier</a></li>
+            <li><a href="" style="color: skyblue;">Mage</a></li>
+            <li><a href="" style="color: yellow;">Voleur</a></li>
+            </ul>
+    </li>
+        <li class="menu-maps"><a href="">Maps</a>
+        <ul class="sub-maps">
+            <li><a href="">Goulet des chanteguerres</a></li>
+            <li><a href="">Oeil du Cyclone</a></li>
+            <li><a href="">Bassin D'Arathi</a></li>
+        </ul></li>
+      </ul>
+
+
     </nav>
     <H1>à trouver</H1>
     <header>
@@ -169,10 +164,22 @@
 
 </Main>
 
+<section>
+    <div class="generate-container">
+        <H3>Générateur combo classe/race</H3>
+        <div class="btn-container">
+        <button class="btn-ally"><h4>Alliance</h4></button>
+            <h2 id="generateA"></h2>
+        <button class="btn-horde"><h4>Horde</h4></button>
+        <h2 id="generateH"></h2>
+        </div>
+    </div>
+</section>
 
 
 
 
-    
+
+    <script src="./index.js"></script>
 </body>
 </html>
