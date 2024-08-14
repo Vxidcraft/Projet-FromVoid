@@ -327,7 +327,14 @@ section {
     
 }
 
-
+input {
+    width: 40%;
+    height: 100px;
+    margin-top: 40px;
+    background: none;
+   
+    text-align: center;
+}
 
 #generate {
 
